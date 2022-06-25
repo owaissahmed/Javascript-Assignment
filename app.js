@@ -844,3 +844,120 @@ document.write ("<h2>" + devices[0] +"</h2>")
 var mob_devices = ["Apple " , " Motorolla " , " Nokia " , " Samsung"]
 
 document.write ("<select>" + "<option>" + mob_devices[0]+ "</option> " + "<option>" + mob_devices[1] +"</option>" + "<option>" + mob_devices[2] +"</option>" + "<option>" + mob_devices[3] +"</option>" +"</select>" )
+
+// CHAPTER # 17 - 20
+
+// Question 1
+
+var arr = [["karachi", "quetta"], ["lahore", "quetta"]]
+
+console.log(arr[0][0]);
+
+// Question 2
+
+var multi = [[0, 1], [2, 3]]
+
+console.log(multi[0][0], multi[0][1], multi[1][0], multi[1][1]);
+console.log(multi[0][1], multi[0][0], multi[1][0], multi[0][1]);
+console.log(multi[1][0], multi[0][1], multi[0][0], multi[0][1]);
+
+// Question 3
+
+for (counting = 1; counting <= 10; counting++) {
+    document.write(counting + "</br>")
+}
+
+// Question 4
+
+var user = +prompt("Enter your Number")
+var How_many_time = +prompt("How many time you want to multiply")
+
+for (var i = 1; i <= How_many_time; i++) {
+    document.write(user + " x " + i + " = " + user * i + "<br/>")
+}
+
+// Question 5
+
+var fruits = ["Banana", "Apple", "Mango", "Stawberry", "orange"]
+
+for (i = 0; i < fruits.length; i++) {
+    document.write("Element at index " + [i] + " is " + fruits[i] + "</br>")
+}
+
+// Question 6
+
+for (i = 0; i <= 15; i++) {
+    document.write(i + " , ")
+}
+document.write("</br>")
+for (let index = 10; index >= 1; index--) {
+    document.write(index + " " + "," + " ")
+}
+
+for (var i = 1; i <= 20; i++) {
+    if (i % 3 == 0) {
+        document.write(i + ",")
+    }
+}
+for (var i = 1; i <= 20; i++) {
+    if (i % 2 == 0) {
+        document.write(i + "k" + ",")
+    }
+}
+
+for(var i = 0 ; i < 20; i++){
+    i++
+    document.write (i + " " + "," + " ")
+} 
+
+// Question 7
+
+var items = ["cake", "applepie", "cookie", "chips", "patties"]
+var input = prompt("Enter your item")
+var flag = "no";
+
+for (var i = 0; i < items.length; i++) {
+    if (items[i] === input) {
+        flag = "yes";
+        break;
+    }
+}
+
+if (flag === "yes") {
+    alert("This item is availibel at index " + [i])
+} else {
+    alert("This item is not availibele")
+}
+
+// Question 8
+
+var A = [24, 53, 78, 91, 12]
+var max = 0
+
+for (var i = 0; i < A.length; i++) {
+    if (max < A[i]) {
+        max = A[i];
+    }
+}
+
+console.log(max)
+
+// Question 9
+
+var a = [24, 53, 78, 91, 12]
+var min = 0
+
+console.log(min)
+for (i = 0; i < a.length; i++) {
+    if (i < a[i]) {
+        min = a[i];
+    }
+}
+
+// Question 10
+
+for (var i = 1; i <= 100; i++) {
+    if (i % 5 == 0) {
+        document.write(i + ",")
+    }
+}

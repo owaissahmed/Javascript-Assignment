@@ -289,5 +289,79 @@ document.write("Amount of Snacks per day:  " + snankPerDay);
 document.write("<br>");
 document.write("You will need " + totalSnaks + " " + favsnack + " to last you untill the ripe old age of " + maxAge);
 
+// CHAPTER # 06
+
+
+// Question 1
+
+var num = 10;
+var newnum = ++num;
+document.write (newnum + "<br>");
+
+var num = 11;
+var newnum = ++num;
+document.write (newnum + "<br>");
+
+var num = 11;
+var newnum = num--;
+document.write (newnum + "<br>");
+
+var num = 11;
+var newnum = --num;
+document.write (newnum + "<br>");
+
+// Question 2
+
+var new_num = 10;
+
+document.write ("the value of a is " + new_num + "<br>");
+
+var new_num = ++new_num;
+document.write ("now the value of a is " + new_num + "<br>");
+
+var new_num = ++new_num;
+document.write ("now the value of a is " + new_num + "<br>");
+
+var new_num = --new_num;
+document.write ("now the value of a is " + new_num + "<br>");
+
+var new_num = --new_num;
+document.write ("now the value of a is " + new_num + "<br>");
+
+// Question 3
+
+var username = prompt ("what's your good name");
+alert ("Welcome ! " + username);
+
+var age = +prompt ("What's your age");
+var newage = age + 2;
+alert ("Your age is " + newage);
+
+
+// Question 4
+var table = +prompt("Enter your number to see table")
+
+for (i = 1 ; i <= 10 ; i++){
+    console.log (table + " x " + i + " = " + table*i)
+}
+
+// Question 5
+
+var f_sub = prompt ("Enter your first subject");
+var f_obt = +prompt ("Obatained marks of "+ f_sub);
+var s_sub = prompt ("Enter your second  subject");
+var s_obt = +prompt ("Obatained marks of "+ s_sub);
+var t_sub = prompt ("Enter your third subject");
+var t_obt = +prompt ("Obatained marks of "+ t_sub);
+var total = 100;
+var f_per = f_obt / total * 100;
+var s_per = s_obt / total * 100;
+var t_per = t_obt / total * 100;
+
+document.write ("<b>" + f_sub + "</b>" + " " + f_obt + "/" + total + " " + "= " + f_per + "%" + "<br>");
+document.write ("<b>" + s_sub + "</b>" + " " + s_obt + "/" + total + " " + "= " + s_per + "%" + "<br>");
+document.write ("<b>" + t_sub + "</b>" + " " + t_obt + "/" + total + " " + "= " + t_per + "%" + "<br>");
+
+// CHAPTER # 07
 
 

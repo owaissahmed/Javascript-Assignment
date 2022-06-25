@@ -715,3 +715,132 @@ else {
 alert ("Invalid value")
 }
 
+// CHAPTER # 14-16
+
+// Question 1 - 6
+
+var name = prompt ("Enter your name")
+
+var students = [name];
+
+alert ("Welcome " + students)
+
+var cities = ["karachi" , "lahore" , "islamabad"]
+
+alert ("Welcome " + cities[0])
+
+var numbers = [1 , 2 , 3 , 4 , 5]
+
+alert (numbers[2])
+
+var bool = ["true" , "false"]
+
+alert (bool[1])
+
+var mix = ["owais" , "ali" ,"true",  3 , 5 ,]
+alert (mix[1]);
+alert (mix[2]);
+alert (mix[4]);
+
+// Question 7
+
+document.write ("<h1>" + "Qualification" + "</h1>")
+var Qualification = ["SSC", "HSC", "BCS", "BS", "BCOM" , "MS" , "M. Phil" , "PhD"]
+document.write ("<h3>" + Qualification[0] + "</h3>")
+document.write ("<h3>" + Qualification[1] + "</h3>")
+document.write ("<h3>" + Qualification[2] + "</h3>")
+document.write ("<h3>" + Qualification[3] + "</h3>")
+document.write ("<h3>" + Qualification[4] + "</h3>")
+document.write ("<h3>" + Qualification[5] + "</h3>")
+document.write ("<h3>" + Qualification[6] + "</h3>")
+document.write ("<h3>" + Qualification[7] + "</h3>")
+
+// Question 8
+
+var student_name = ["Ali" , "Owais" , "Bilal"]
+var scores= [320 , 230 , 480]
+var per = [scores[0] / 500 * 100 , scores[1] / 500 * 100 , scores[2] / 500 * 100]
+
+document.write ("<h2>" + " Score of " + student_name[0] + " is " + scores[0] + " Percentage is " + per[0] + "%" + "</h2>")
+document.write ("<h2>" + " Score of " + student_name[1] + " is " + scores[1] + " Percentage is " + per[1] + "%" + "</h2>")
+document.write ("<h2>" + " Score of " + student_name[2] + " is " + scores[2] + " Percentage is " + per[2] + "%" + "</h2>")
+
+// Question 9
+
+var colors = ["gray " , " purple " , " white"]
+var F_color = prompt("Enter the color you want to add the first")
+colors.unshift (F_color)
+alert (colors);
+var l_color = prompt("Enter the color you want to add the last")
+colors.push (l_color)
+alert (colors);
+var F_two_color = prompt("Enter the two color you want to add the first")
+colors.unshift (F_two_color)
+alert (colors);
+colors.shift ();
+alert (colors);
+colors.pop ();
+alert (colors);
+var color = prompt("Enter the color which you want to add in your given index no.")
+var index = +prompt("Enter the index no. where you want to add the color")
+colors.splice (index , 0, color);
+alert (colors); 
+var index_no = +prompt("Enter the index no. where you want to del the color")
+colors.splice (index_no , 1);
+alert (colors); 
+
+// Question 10
+
+    var studentScores = [67, 87, 98, 97, 67, 80, 90];
+    document.write("Scores of Students :  " + studentScores);
+
+    document.write("<br>")
+
+    var sortedScores = studentScores.sort()
+    document.write("Ordered Scores of Students :  " + studentScores);
+
+// Question 11
+var cities = ["karachi" , "lahore" , "islamabad" , "Quetta" , "Peshawer"]
+var selected_cities = [cities[2] , cities[0]]
+
+alert (selected_cities)
+
+// Question 12
+
+var arr = ["This", "is", "my", "cat"];
+var joined = arr.join(" ");
+document.write (joined)
+
+// Question 13
+
+var devices = ["keyboard " , " mouse " , " printer " , " monitor"]
+document.write ("<h1>" + "Devices" +"</h1>")
+document.write ("<h2>" + devices +"</h2>")
+document.write ("<h1>" + "Out" +"</h1>")
+document.write ("<h2>" + devices[0] +"</h2>")
+document.write ("<h1>" + "Out" +"</h1>")
+document.write ("<h2>" + devices[1] +"</h2>")
+document.write ("<h1>" + "Out" +"</h1>")
+document.write ("<h2>" + devices[2] +"</h2>")
+document.write ("<h1>" + "Out" +"</h1>")
+document.write ("<h2>" + devices[3] +"</h2>")
+
+// Question 14
+
+var devices = ["keyboard " , " mouse " , " printer " , " monitor"]
+document.write ("<h1>" + "Devices" +"</h1>")
+document.write ("<h2>" + devices +"</h2>")
+document.write ("<h1>" + "Out" +"</h1>")
+document.write ("<h2>" + devices[3] +"</h2>")
+document.write ("<h1>" + "Out" +"</h1>")
+document.write ("<h2>" + devices[2] +"</h2>")
+document.write ("<h1>" + "Out" +"</h1>")
+document.write ("<h2>" + devices[1] +"</h2>")
+document.write ("<h1>" + "Out" +"</h1>")
+document.write ("<h2>" + devices[0] +"</h2>")
+
+// Question 15
+
+var mob_devices = ["Apple " , " Motorolla " , " Nokia " , " Samsung"]
+
+document.write ("<select>" + "<option>" + mob_devices[0]+ "</option> " + "<option>" + mob_devices[1] +"</option>" + "<option>" + mob_devices[2] +"</option>" + "<option>" + mob_devices[3] +"</option>" +"</select>" )

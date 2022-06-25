@@ -289,7 +289,7 @@ document.write("Amount of Snacks per day:  " + snankPerDay);
 document.write("<br>");
 document.write("You will need " + totalSnaks + " " + favsnack + " to last you untill the ripe old age of " + maxAge);
 
-// CHAPTER # 06
+// CHAPTER # 06-09
 
 
 // Question 1
@@ -362,6 +362,198 @@ document.write ("<b>" + f_sub + "</b>" + " " + f_obt + "/" + total + " " + "= " 
 document.write ("<b>" + s_sub + "</b>" + " " + s_obt + "/" + total + " " + "= " + s_per + "%" + "<br>");
 document.write ("<b>" + t_sub + "</b>" + " " + t_obt + "/" + total + " " + "= " + t_per + "%" + "<br>");
 
-// CHAPTER # 07
+// CHAPTER # 10-11
+
+// Question 1
+
+var city = prompt ("Enter your city")
+if (city === "karachi"){
+    alert ("Welcome to city of lights")
+}
+
+// Question 2
+
+var gender = prompt ("what's your gender..??")
+if (gender === "male") {
+    alert ("Good morning sir")
+}
+if (gender === "female") {
+    alert ("Good morning maam")
+}
+
+// Question 3
+
+var traffic = prompt ("Enter Signal Color")
+if (traffic === "red") {
+    alert ("Must stop")
+}
+if (traffic === "green") {
+    alert ("Move now")
+}
+if (traffic === "yellow") {
+    alert ("Ready to move")
+}
+
+// Question 4
+
+var fuel = prompt("How many litre' of fuel are remaining..?")
+if (fuel <= 0.25){
+    alert ("Please refill the fuel in your car")
+}
+
+// Question 5
+
+var a = 4;
+if (++a === 5){
+alert("given condition for variable a is true");
+}
+
+var b = 82;
+if (b++ === 83){
+alert("given condition for variable b is true");
+} 
+
+var c = 12;
+if (c++ === 13){
+alert("condition 1 is true");
+}
+if (c === 13){
+    alert("condition 2 is true");
+}
+if (++c < 14){
+    alert("condition 3 is true");
+}
+if(c === 14){
+    alert("condition 4 is true");
+}
+
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+alert("The cost equals");
+}
+
+if (true){
+    alert ("True")
+}
+if (false){
+    alert ("True")
+}
+
+if("car" < "cat"){
+    alert("car is smaller than cat");
+}
+
+// Question 6
+
+
+var total_marks = +prompt ("Enter your total marks..")
+var obt_marks = +prompt ("Enter your obtained marks..")
+var Percent = (obt_marks / total_marks * 100)
+
+document.write ("<h1>" + "MARK SHEET" + "</h1>" + "</br>");
+document.write ("<b>" + "Total Marks " + "</b>" + "= " + total_marks + "</br>");
+document.write ("<b>" + "Obatained Marks " + "</b>" + "= " + obt_marks +"</br>");
+document.write ("<b>" + "Percentage " + "</b>" + "= " + Percent + "</br>")
+
+if (Percent >= 80) {
+    document.write ("<b>" + "Grade " + "</b>" + "= " + "A+" + "</br>");
+}
+else if (Percent >= 70) {
+    document.write ("<b>" + "Grade " + "</b>" + "= " + "A" + "</br>");
+}
+else if (Percent >= 60) {
+    document.write ("<b>" + "Grade " + "</b>" + "= " + "B" + "</br>");
+}
+else if (Percent < 60) {
+    document.write ("<b>" + "Grade " + "</b>" + "= " + "Fail" + "</br>");
+}
+if (Percent >= 80){
+document.write ("<b>" + "Remarks " + "</b>" + "= " + "Exellant"+ "</br>")
+}
+else if (Percent >= 70){
+document.write ("<b>" + "Remarks " + "</b>" + "= " + "Good" + "</br>")
+}
+else if (Percent >= 60){
+document.write ("<b>" + "Remarks " + "</b>" + "= " + "You need to improve" + "</br>")
+}
+else if (Percent < 60){
+document.write ("<b>" + "Remarks " + "</b>" + "= " + "Sorry" + "</br>")
+}
+
+// Question 7
+
+var guess = 6
+var guess_no = +prompt("Guess the No")
+
+if (guess_no === guess) {
+    alert("BINGO")
+}
+if (guess_no === ++guess) {
+    alert("“Close enough to the correct answer”.")
+}
+
+// Question 8
+
+var number = +prompt("Enter a number : ");
+if (number % 3 == 0) {
+     alert('divisible by 3')
+} else {
+     alert("not divisible by 3")
+}
+
+// Question 9
+
+var number = +prompt("Enter a number : ");
+if (number % 2 == 0) {
+        alert('Even Number')
+} else {
+        alert("Odd Number")
+}
+
+// Question 10
+
+var temprature = +prompt ("Enter's a degree")
+
+if (temprature >= 40){
+    alert ("“It is too hot outside.”")
+}
+ else if (temprature >= 30){
+    alert ("“The Weather today is Normal.”")
+}
+else if (temprature >= 20){
+    alert ("“The Weather is cool.”")
+}
+else if (temprature >= 10){
+    alert ("“OMG! Today weather is so Cool.”")
+}
+
+// Question 11 
+
+var num1 = +prompt ("Enter Your First Num")
+var opt = prompt ("Enter Your opt")
+var num2 = +prompt ("Enter Your Last Num")
+
+if (opt === "+") {
+console.log (num1 + num2)
+alert (num1 + num2)
+}
+if (opt === "/") {
+console.log (num1 / num2)
+alert (num1 + num2)
+}
+if (opt === "*") {
+console.log (num1 * num2)
+alert (num1 + num2)
+}
+if (opt === "-") {
+console.log (num1 - num2)
+alert (num1 + num2)
+}
+if (opt === "%") {
+console.log (num1 % num2)
+alert (num1 + num2)
+}
 
 

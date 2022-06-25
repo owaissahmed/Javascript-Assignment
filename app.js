@@ -77,3 +77,37 @@ var myName = "Muhammad Owais";
     var pattern = "▬▬▬▬▬▬▬▬▬ஜ ۩۞۩ ஜ▬▬▬▬▬▬▬▬▬";
     alert(pattern);
 
+// CHAPTER # 03 
+
+// Question 1 
+var age = "I am 18 years old";
+
+alert (age)
+
+// Question 2
+
+var visit = "you have visited this website 14 times";
+
+alert (visit)
+
+// Question 3
+
+var birthyear = "my birth year is";
+
+var year = 2003;
+
+document.write (birthyear + " " + year + "\n" + "data type of my declared variable is number <br/>");
+// Question 4
+
+var buyer = "Ali";
+var product = "T-shirts";
+var quantity = "5";
+
+document.write (buyer + " " + "ordered" + " " + quantity + " " + product + " " + "on XYZ clothing store")
+
+// CHAPTER # 04
+
+// Question 1
+
+alert (" Variable names can only contain NUMBERS , $ , _\n Variables must begin with a LETTER , $ , _\n Variable names are case SENSITIVE\n Variable names should not be JS KEYWORDS");
+

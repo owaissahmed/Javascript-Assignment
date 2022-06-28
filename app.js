@@ -1185,13 +1185,19 @@ alert ("Random Number Between 1 and 100 is " + whole)
 
 // Question 7
 
-var weight = prompt("Enter Your Weight in kgs i.e 35 kgs")
-console.log ("Your Weight Is " + weight)
+var weight = prompt("Enter Your Weight")
+weight = parseFloat(weight)
+alert ("Your Weight is " + weight + " Kilograms")
 
 // Question 8
 
 var secret = Math.random()
 var sec = (secret * 10) + 1
 var dots = Math.floor(sec)
-alert ("Guess What Is Coming From Dice")
-alert (dots)
+alert ("Guess What Is Coming From 1 - 10")
+var guess_secret = +prompt ("Enter Number")
+if (guess_secret === dots){
+    alert ("You Win")
+} else {
+    alert ("You loose,Try Again")
+}

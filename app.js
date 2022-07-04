@@ -1201,3 +1201,129 @@ if (guess_secret === dots){
 } else {
     alert ("You loose,Try Again")
 }
+
+// // CHAPTER # 31-34
+
+// //Question 1
+
+var date = new Date();
+document.write (date + "<br>")
+
+// Question 2
+
+var monthNames = ["January", "February", "March", "April", "May", "June", "July" ,"August" ,"September" ,"Octuber","November", "December"];
+var date = new Date();
+var month = date.getMonth();
+var nowmonth = monthNames[month]
+
+document.write (nowmonth + "<br>")
+
+// Question 3
+
+var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+var date = new Date();
+var day =date.getDay()
+var nowday = dayNames[day]
+document.write (nowday + "<br>") 
+
+// Question 4
+
+var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+var date = new Date();
+var day =date.getDay()
+
+var nowday = dayNames[day]
+if(nowday === dayNames[0,6]){
+    alert("Its Fun Day")
+} else{
+    alert ("Its Not Fun Day")
+}
+
+// Question 5
+
+var date = new Date();
+var day =date.getDate()
+
+if (day < 16){
+    alert ("First fifteen days of the month")
+} else {
+alert ("Last days of the month")
+}
+
+// Question 6
+
+var date = new Date();
+document.write ("Current Date = " + date + "</br>")
+var milisec = date.getTime()
+document.write("Elapsed miliseconds since 1st January 1970 = " + milisec+ "</br>")
+var mints = milisec / 1000 / 60 
+var minutes =Math.floor(mints)
+document.write("Elapsed miliseconds since 1st January 1970 = " + minutes + "</br>")
+
+// Question 8
+
+var date = new Date();
+date.setFullYear(2030)
+document.write("Later Date = " + date + "<br>")
+
+// Question 9
+
+var date = new Date().getTime()
+var June = new Date("18 june 2015").getTime();
+var diff = (date - June)
+var days = diff / (1000 * 60 * 60 * 24)
+var passed = Math.floor(days)
+document.write (passed + " days have passed since 1st ramazan 2015" + "<br>")
+
+// Question 10
+
+var date = new Date("1 january 2015")
+var currentdate = new Date()
+var jan = date.getTime()
+var now = currentdate.getTime()
+var diff = (now - jan)
+var secs = diff / (1000)
+var sec = Math.floor(secs)
+document.write ("On reference date " + currentdate + "<br>")
+document.write (sec + " have passed since the beginnig of 2015" + "<br>")
+
+// Question 12
+
+var date = new Date();
+var passedhour = new Date();
+passedhour.setFullYear(1022)
+document.write ("Current date = " + date + "<br>")
+document.write ("100 years ago,It was " + passedhour + "<br>")
+
+// Question 13
+
+var birthdaydate = prompt ("Enter Your Birthday")
+var date = new Date().getTime();
+var birth = new Date(birthdaydate).getTime();
+var diff = (date - birth)
+var year = diff / (1000 * 60 * 60 * 24 * 365)
+year= Math.ceil(year)
+document.write ("Your birhday is "+ birthdaydate + "<br>")
+document.write ("Your age is "+ year + "<br>")
+
+// Question 14
+
+var name = prompt("Enter Your Name")
+var monthNames = ["January", "February", "March", "April", "May", "June", "July" ,"August" ,"September" ,"Octuber","November", "December"];
+var date = new Date();
+var month = date.getMonth();
+var nowmonth = monthNames[month]
+var unitsused = +prompt("How many units you used")
+var Chargeperunit = 16
+var billindate = (unitsused * Chargeperunit)
+var roundedbill = Math.round(billindate)
+var late = 350
+var billafterdate = (billindate + late)
+var roundbill = Math.round(billafterdate)
+document.write ("Name = " + name + "<br>")
+document.write ("Month = " + nowmonth + "<br>")
+document.write ("Number of Units = " + unitsused + "<br>")
+document.write ("Charges per unit = " +  Chargeperunit + "<br>")
+document.write ("Net Amount Payable (within Due Date) = " + roundedbill + "<br>")
+document.write ("Late Payment Surcharge = " + late + "<br>")
+document.write ("Gross Amount Payable (after Due Date) = " + roundbill + "<br>")

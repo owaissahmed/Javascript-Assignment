@@ -187,7 +187,7 @@ f = (Celsius * 9 / 5) + 32;
 document.write(Celsius + "<sup>o</sup>C is " + f + "<sup>o</sup>C");
 document.write("<br>");
 document.write(fahrenheit + "<sup>o</sup>F is " + c + "<sup>o</sup>C ");
-    
+
 // Question 7
 
 var item_1_cost = 650;
@@ -1260,6 +1260,15 @@ var mints = milisec / 1000 / 60
 var minutes =Math.floor(mints)
 document.write("Elapsed miliseconds since 1st January 1970 = " + minutes + "</br>")
 
+// Question 7
+
+var ampm = new Date().getHours()
+if (ampm <= 12 ){
+    alert ("its am")
+} else {
+    alert ("its pm")
+}
+
 // Question 8
 
 var date = new Date();
@@ -1286,6 +1295,15 @@ var secs = diff / (1000)
 var sec = Math.floor(secs)
 document.write ("On reference date " + currentdate + "<br>")
 document.write (sec + " have passed since the beginnig of 2015" + "<br>")
+
+// Question 11
+
+var date = new Date("jan 7, 2020 12:12:12")
+document.write("current date = " + date + "<br>")
+
+var oneHourago = new Date("jan 7, 2020 11:12:12")
+document.write("one hour ago time was = " + oneHourago + "<br>")
+
 
 // Question 12
 
@@ -1327,3 +1345,99 @@ document.write ("Charges per unit = " +  Chargeperunit + "<br>")
 document.write ("Net Amount Payable (within Due Date) = " + roundedbill + "<br>")
 document.write ("Late Payment Surcharge = " + late + "<br>")
 document.write ("Gross Amount Payable (after Due Date) = " + roundbill + "<br>")
+
+// CHAPTER # 35-38
+
+// Question 1
+
+function date() {
+   document.write(new Date() + "</br>")
+}
+
+date()
+
+// // Question 2
+
+function fullname (){
+   var first = prompt("Enter Your last Name")
+   var last = prompt("Enter Your First Name")
+    document.write(first + " " + last + "</br>" )
+}
+
+fullname()
+
+// //Question 3
+
+var firstnum = +prompt("Enter Your First Number")
+var lastnum = +prompt("Enter Your Last Number")
+
+function sum (){
+    document.write((firstnum + lastnum) + "</br>" )
+}
+
+sum()
+
+// Question 4
+
+
+function Calculator() {
+var firstnum = +prompt("Enter Your First Number")
+var opt = prompt("Enter Your Operater")
+var lastnum = +prompt("Enter Your last Number")
+
+   if (opt === "+") {
+      document.write(firstnum + lastnum)
+   } else if (opt === "-") {
+      document.write(firstnum - lastnum)
+   } else if (opt === "*") {
+      document.write(firstnum * lastnum)
+   } else if (opt === "/") {
+      document.write(firstnum / lastnum)
+   } else {
+      alert ("Invalid Request")
+   }
+}
+Calculator()
+
+// Question 5
+
+function square(){
+   var num = +prompt("Enter a Number To Find a Square")
+   document.write ("The Square of "+ num + " is " + num * num)
+}
+
+square()
+
+// Question 6
+
+
+
+// Question 7
+var start = +prompt("Enter a Number where you want to start a counting")
+var end = +prompt("Enter a Number where you want to end a counting")
+
+function starting (){
+    for (i = start ; i <= end ; i++){
+document.write (i + "</br>")
+    }
+}
+
+starting()
+
+// Question 8
+
+
+
+// Question 9
+
+function area() {
+   var widht = +prompt("Enter the widht of triangle")
+   var height = +prompt("Enter the height of triangle")
+   var area = (widht * height)
+   document.write("The Area of Triangle is " + area + "<br>")
+   var a = 32 * 43
+   document.write("The Area of Triangle is " + a)
+}
+
+area()
+

@@ -1441,3 +1441,44 @@ function area() {
 
 area()
 
+// Question 10
+
+function palendrome(){
+    var input = prompt("Enter a word")
+    var input2 = input.split("").reverse().join("")
+    
+    if (input === input2){
+        alert("its a palendrome")
+    }else {
+        alert("its not a palendrome")
+
+    }
+}
+
+palendrome()
+
+// Question 11
+
+
+
+// Question 12
+
+function longestWord(str){
+
+    var str = prompt("Enter your string : ")
+    var splitArray= str.split(' ');
+    
+    var storeWord = "";
+    
+    for (var i = 0; i < splitArray.length; i++) {
+           if (splitArray[i].length > storeWord.length) {
+            storeWord = splitArray[i];
+        }
+    }
+        document.write("String is : " + str + "<br>")
+        document.write("Longest word in String is : " + storeWord)
+    }
+
+    longestWord()
+
+

@@ -1386,13 +1386,13 @@ var opt = prompt("Enter Your Operater")
 var lastnum = +prompt("Enter Your last Number")
 
    if (opt === "+") {
-      document.write(firstnum + lastnum)
+      document.write(firstnum + lastnum + "<br>")
    } else if (opt === "-") {
-      document.write(firstnum - lastnum)
+      document.write(firstnum - lastnum + "<br>")
    } else if (opt === "*") {
-      document.write(firstnum * lastnum)
+      document.write(firstnum * lastnum + "<br>")
    } else if (opt === "/") {
-      document.write(firstnum / lastnum)
+      document.write(firstnum / lastnum + "<br>")
    } else {
       alert ("Invalid Request")
    }
@@ -1403,7 +1403,7 @@ Calculator()
 
 function square(){
    var num = +prompt("Enter a Number To Find a Square")
-   document.write ("The Square of "+ num + " is " + num * num)
+   document.write ("The Square of "+ num + " is " + num * num + "<br>")
 }
 
 square()
@@ -1436,7 +1436,7 @@ function area() {
    var area = (widht * height)
    document.write("The Area of Triangle is " + area + "<br>")
    var a = 32 * 43
-   document.write("The Area of Triangle is " + a)
+   document.write("The Area of Triangle is " + a + "<br>")
 }
 
 area()
@@ -1459,7 +1459,17 @@ palendrome()
 
 // Question 11
 
+function cap() {
+    var word = prompt("Enter").toLowerCase()
+    var word = word.split(" ")
+    for (i = 0; i < word.length; i++) {
+        var capital = word[i].charAt(0).toUpperCase()
+        var remain = word[i].slice(1)
+        document.write  (capital + remain + " ");
+    }
+}
 
+cap()
 
 // Question 12
 
@@ -1481,4 +1491,17 @@ function longestWord(str){
 
     longestWord()
 
+// Question 13 
 
+function occurance(){
+    var input = prompt("Enter Your string")
+    var character = prompt("Enter your character")
+    var count = 0
+for (var i = 0 ; i < input.length ;i++){
+    if (input.charAt(i)=== character)
+    count++
+}
+document.write ("Your character (" + character + ") is " + count + " apperance" + "<br>")
+}
+
+occurance()
